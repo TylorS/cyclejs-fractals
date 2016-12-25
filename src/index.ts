@@ -1,11 +1,11 @@
-import { run } from '@cycle/xstream-run'
-import { makeDOMDriver } from '@cycle/dom'
+import { run } from '@motorcycle/core'
+import { makeDomDriver } from '@motorcycle/dom'
 import { App } from './app'
 
 const main = App
 
 const drivers = {
-    DOM: makeDOMDriver('#app')
+    DOM: makeDomDriver(document.querySelector('#app') as HTMLElement)
 }
 
 run(main, drivers)

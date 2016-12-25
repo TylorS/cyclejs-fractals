@@ -1,6 +1,5 @@
-import { VNode, svg, h } from '@cycle/dom'
-import { DOMSource } from '@cycle/dom/xstream-typings'
-import xs, { Stream } from 'xstream'
+import { Stream } from 'most';
+import { DomSource, VNode, VirtualNode, svg, h } from '@motorcycle/dom'
 import { interpolateViridis } from 'd3-scale';
 
 function deg(radians: number) {
